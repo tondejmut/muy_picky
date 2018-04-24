@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
+{% extends "base.html" %}
+{% block head_title %}Welcome || {{ block.super }}{% endblock head_title %}
+{% block content %}
 <body>
     <h1>Hello World!</h1>
     <p>This is {{ bool_item }} coming through</p>
@@ -19,6 +16,6 @@
         {% endfor %}
     </p>
     <p>Some item is {{ some_item }}</p>
+{% endblock content %}
 
 </body>
-</html>
